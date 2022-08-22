@@ -1,0 +1,112 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(177, 143, 216) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: 200% 200%;
+  animation: tdd 6s infinite alternate;
+  overflow: hidden;
+}
+@keyframes tdd {
+  0% {
+    background-position: 20% 50%;
+  }
+  25% {
+    background-position: 50% 75%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 20% 50%;
+  }
+}
+img {
+  height: 200px;
+  width: 200px;
+  border: solid rgb(236, 225, 225) 1px;
+  border-radius: 50%;
+  animation: sadaad 10s linear infinite;
+}
+@keyframes sadaad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 39vh;
+}
+.anmtiom {
+  height: 100vh;
+  width: 100vw;
+  background: #182848;
+  position: absolute;
+  z-index: 2;
+  transition: opacity 2s;
+}
+.anmtiom:hover {
+  opacity: 0;
+}
+.anmtiom .big {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+.anmtiom .big .biggest {
+  position: absolute;
+  left: calc(50vw - 50px);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #182848);
+  animation: adafagg 3s infinite;
+}
+@keyframes adafagg {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}
+.anmtiom .big .biggest .small {
+  height: 150px;
+  width: 150px;
+  background: rgb(95, 242, 247);
+  box-shadow: 0px 0px 30px rgb(95, 242, 247), 0px 0px 60px rgb(95, 242, 247),
+    0px 0px 90px rgb(95, 242, 247), 0px 0px 1200px rgb(95, 242, 247);
+  animation: adaaaf 3s infinite;
+  transform-origin: 100% 100%;
+}
+@keyframes adaaaf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  height: 59vh;
+}
+.nand {
+  padding: 20px;
+}
+.banquan {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
