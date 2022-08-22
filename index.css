@@ -52,6 +52,7 @@ img {
   position: absolute;
   z-index: 2;
   transition: opacity 2s;
+  top: 0px;
 }
 .anmtiom:hover {
   opacity: 0;
