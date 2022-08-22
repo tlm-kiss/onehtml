@@ -62,10 +62,9 @@ img {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 0%;
+  left: 0%;
   align-items: center;
-  transform: rotate(-45deg);
 }
 .anmtiom .big .biggest {
   position: absolute;
