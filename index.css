@@ -8,6 +8,7 @@ body {
   background-size: 200% 200%;
   animation: tdd 6s infinite alternate;
   overflow: hidden;
+  padding: 0px;
 }
 @keyframes tdd {
   0% {
@@ -46,13 +47,16 @@ img {
   height: 39vh;
 }
 .anmtiom {
-  height: 100vh;
-  width: 100vw;
+  height: 110vh;
+  width: 110vw;
   background: #182848;
   position: absolute;
   z-index: 2;
   transition: opacity 2s;
   top: 0px;
+  margin: -10px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 .anmtiom:hover {
   opacity: 0;
