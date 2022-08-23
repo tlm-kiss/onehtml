@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(
     45deg,
@@ -24,9 +26,9 @@ body {
     background-position: 20% 50%;
   }
 }
-img {
-  height: 200px;
-  width: 200px;
+.oneimg {
+  height: 100px;
+  width: 100px;
   border: solid rgb(236, 225, 225) 1px;
   border-radius: 50%;
   animation: sadaad 10s linear infinite;
@@ -39,27 +41,72 @@ img {
     transform: rotate(360deg);
   }
 }
-.one {
+.head {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 0px;
+  background: linear-gradient(
+    45deg,
+    rgb(177, 143, 216) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.2s;
+}
+.head div:nth-child(1) {
+  height: 25%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.head div:nth-child(1) img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.head div:nth-child(2) {
+  flex: 1;
+}
+.head div:nth-child(2) div {
+  height: 40px;
+  border: rgb(223, 209, 209) solid 1px;
+}
+.head div:nth-child(2) div:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.head:hover {
+  width: 50%;
+  border-right: solid rgb(238, 230, 230) 3px;
+}
+.one img:hover + .head {
+  width: 50%;
+  border-right: solid rgb(238, 230, 230) 3px;
+}
+.one {
+  display: flex;
+  justify-content: end;
   flex-direction: column;
-  height: 39vh;
+  align-items: flex-start;
+  height: 15vh;
 }
 .anmtiom {
-  height: 110vh;
-  width: 110vw;
+  height: 100vh;
+  width: 100vw;
   background: #182848;
   position: absolute;
   z-index: 2;
   transition: opacity 2s;
   top: 0px;
-  margin: -10px;
-  padding: 0px;
+  left: 0px;
   box-sizing: border-box;
 }
-.anmtiom:hover {
+body:hover .anmtiom {
   opacity: 0;
+  z-index: -1;
 }
 .anmtiom .big {
   height: 100vh;
