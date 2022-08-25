@@ -95,7 +95,7 @@ body {
   height: 15vh;
 }
 .anmtiom {
-  height: 100vh;
+  height: 103vh;
   width: 100vw;
   background: #182848;
   position: absolute;
@@ -105,27 +105,34 @@ body {
   left: 0px;
   box-sizing: border-box;
 }
-.anmtiom h2 {
-  position: absolute;
-  left: 43%;
-  top: 20%;
-  color: #182848;
+.anmtiom p {
+  color: rgb(95, 242, 247);
   -webkit-text-stroke: 0.05vw rgb(8, 8, 8);
+  animation: xunzhuan 3s infinite;
+  font-size: 25px;
 }
-.anmtiom h2::after {
+.anmtiom p::after {
   content: attr(data-text);
   position: absolute;
   left: 0px;
   top: 0px;
   color: rgba(7, 231, 231, 0.8);
-  animation: h2donghua 2s infinite alternate;
+  animation: h2donghua 2s infinite alternate linear;
 }
 @keyframes h2donghua {
   0% {
     color: rgba(7, 231, 231, 0.8);
   }
   100% {
-    color: rgba(7, 231, 231, 0.2);
+    color: rgba(6, 22, 22, 0.8);
+  }
+}
+@keyframes xunzhuan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
   }
 }
 body:hover .anmtiom {
@@ -163,6 +170,12 @@ body:hover .anmtiom {
     0px 0px 90px rgb(95, 242, 247), 0px 0px 1200px rgb(95, 242, 247);
   animation: adaaaf 3s infinite;
   transform-origin: 100% 100%;
+  position: absolute;
+  left: 0px;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @keyframes adaaaf {
   0% {
